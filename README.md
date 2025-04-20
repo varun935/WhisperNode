@@ -1,8 +1,3 @@
-Got it! Here's a cleaner `README.md` version with proper sections and **only commands** inside code blocks (no descriptions in code blocks):
-
----
-
-```markdown
 # WhisperNode 🔐
 
 WhisperNode is a lightweight, LAN-based dead drop file server built with Flask. Designed for offline, secure, and ephemeral file sharing, it enables stealthy file drops over a local network with features like upload expiration, file-type restrictions, and a simple web interface. Perfect for secure internal transfers without touching the cloud.
@@ -15,6 +10,8 @@ WhisperNode is a lightweight, LAN-based dead drop file server built with Flask. 
 - 🔐 Optional passphrase-based encryption using AES (via PBKDF2 and PyCryptodome)
 - 📦 Lightweight architecture with just two folders: `backend` and `frontend`
 - 🕵️ Silent network presence, ideal for internal use and air-gapped systems
+```markdown
+
 
 ## 🗂️ Project Structure
 
@@ -31,7 +28,7 @@ WhisperNode/
 │   └── static/
 │       └── style.css
 └── README.md
-```
+
 
 ## 🚀 Getting Started
 

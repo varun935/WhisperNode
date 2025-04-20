@@ -62,5 +62,3 @@ This project is licensed under the [MIT License](LICENSE).
 
 Built by Varun Chaitenya Sharma
 ```
-
-Let me know when you're ready for the `requirements.txt` or license file, or if you want to generate a `decryption` interface as well.

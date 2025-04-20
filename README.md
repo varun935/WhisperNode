@@ -10,24 +10,24 @@ WhisperNode is a lightweight, LAN-based dead drop file server built with Flask. 
 - 🔐 Optional passphrase-based encryption using AES (via PBKDF2 and PyCryptodome)
 - 📦 Lightweight architecture with just two folders: `backend` and `frontend`
 - 🕵️ Silent network presence, ideal for internal use and air-gapped systems
-```markdown
+
 
 
 ## 🗂️ Project Structure
 
-```
 WhisperNode/
 ├── backend/
-│   ├── main.py
-│   ├── config.py
-│   └── utils.py
+│   ├── main.py 
+│   ├── access.log
 ├── frontend/
 │   ├── templates/
 │   │   ├── index.html
 │   │   └── success.html
 │   └── static/
 │       └── style.css
-└── README.md
+├── LICENSE
+├── README.md
+└── requirements.txt
 
 
 ## 🚀 Getting Started

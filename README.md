@@ -1,3 +1,7 @@
+Got it! Here's a cleaner `README.md` version with proper sections and **only commands** inside code blocks (no descriptions in code blocks):
+
+---
+
 ```markdown
 # WhisperNode 🔐
 
@@ -17,13 +21,13 @@ WhisperNode is a lightweight, LAN-based dead drop file server built with Flask. 
 ```
 WhisperNode/
 ├── backend/
-│   ├── main.py         # Flask backend
-│   ├── config.py       # Config settings
-│   └── utils.py        # Encryption, validation, and helper functions
+│   ├── main.py
+│   ├── config.py
+│   └── utils.py
 ├── frontend/
 │   ├── templates/
 │   │   ├── index.html
-│   │   ├── success.html
+│   │   └── success.html
 │   └── static/
 │       └── style.css
 └── README.md
@@ -31,40 +35,45 @@ WhisperNode/
 
 ## 🚀 Getting Started
 
-### 1. Clone the Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/yourusername/WhisperNode.git
 cd WhisperNode
 ```
 
-### 2. (Optional but Recommended) Create a Virtual Environment
+### Create a Virtual Environment (Recommended)
 
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-### 3. Install Requirements
+```bash
+source venv/bin/activate
+```
+
+*(Windows)*
+
+```bash
+venv\Scripts\activate
+```
+
+### Install Requirements
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Run the Server
+### Run the Server
 
 ```bash
 cd backend
 python main.py
 ```
 
-Then open your browser and go to `http://<your-VM-or-local-IP>:5000`.
-
 ## 🔒 Encryption Details
 
-WhisperNode uses **AES (Advanced Encryption Standard)** for secure file encryption when a user supplies a passphrase. The encryption key is derived using `PBKDF2` (Password-Based Key Derivation Function 2), with SHA-256 for strong resistance against brute-force attacks.
-
-Encryption is optional: if no passphrase is given, the file is stored as-is. Encrypted files can only be decrypted with the correct passphrase through a matching decryption interface.
+WhisperNode uses AES encryption through `PyCryptodome`, with keys derived using PBKDF2. Encryption is optional and passphrase-based — if the user provides a passphrase during upload, the file will be encrypted securely.
 
 ## 🧾 License
 
@@ -75,4 +84,4 @@ This project is licensed under the [MIT License](LICENSE).
 Built by Varun Chaitenya Sharma
 ```
 
----
+Let me know when you're ready for the `requirements.txt` or license file, or if you want to generate a `decryption` interface as well.

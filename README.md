@@ -17,7 +17,7 @@ WhisperNode is a lightweight, LAN-based dead drop file server built with Flask. 
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/WhisperNode.git
+git clone https://github.com/varun935/WhisperNode.git
 cd WhisperNode
 ```
 
